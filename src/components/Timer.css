@@ -1,0 +1,116 @@
+* {
+  font-family: Arial;
+}
+
+body,
+.lap-history {
+  background-color: rgb(24, 59, 97);
+}
+
+.timer-container,
+.lap-history {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  min-height: 50vh;
+  width: 400px;
+  background-color: #252424b4;
+  border-radius: 90px;
+  padding: 20px;
+  color: white;
+}
+
+.lap-history {
+  background-color: rgb(24, 59, 97);
+}
+
+.timer-display {
+  border: 2px solid #333;
+  padding: 20px;
+  margin: 20px;
+  font-size: 48px;
+  color: rgb(134, 73, 73);
+  background-color: #fff;
+}
+
+.timer-controls {
+  display: flex;
+  justify-content: center;
+}
+
+.timer-controls button {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  padding: 15px 32px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.timer-controls button:hover {
+  background-color: #0046d6;
+}
+
+.timer-laps {
+  width: 100%;
+}
+
+.timer-laps ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+.timer-laps li {
+  border-bottom: 1px solid #3d3d3d;
+  padding: 8px 20px;
+}
+
+.timer-laps li:nth-child(odd) {
+  background-color: #2525258a;
+}
+
+.lap-history ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  width: 600px;
+}
+
+.lap-history li {
+  border-bottom: 1px solid #ddd;
+  padding: 8px 16px;
+  color: #e6e6e6;
+}
+
+.lap-history li:nth-child(odd) {
+  background-color: #2525258a;
+}
+
+.lap-history button {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.lap-history button:hover {
+  background-color: #0046d6;
+}
+
+.redCircleImg {
+  width: 10%;
+  opacity: 70%;
+  position: relative;
+  left: 150px;
+  top: 10px;
+}
